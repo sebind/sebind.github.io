@@ -28,7 +28,7 @@ export default function Home() {
               <span className="italic text-[#000080]">Dr. Sebin Devasia</span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-slate-600">
-              Exploring emerging optoelectronic and semiconductor materials through synthesis, characterization, and computational modeling to enable next-generation energy and radiation sensing technologies.
+              Exploring emerging optoelectronic and semiconductor materials through synthesis, characterization, and computational modeling to enable next-generation energy and sensing technologies.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
