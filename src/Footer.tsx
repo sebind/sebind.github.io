@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-[#1754cf]/5 pt-8 text-center text-xs text-slate-400">
-          © 2024 Dr. Sebin Devasia. All rights reserved. Professional Portfolio.
+          © 2026 Dr. Sebin Devasia. All rights reserved. Professional Portfolio.
         </div>
       </div>
     </footer>
