@@ -80,7 +80,7 @@ export default function Home() {
               <img 
                 alt="Professional portrait of Dr. Sebin Devasia" 
                 className="h-[500px] w-full rounded-2xl object-cover shadow-2xl transition-all duration-700" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd_c9Wvp5mQgqa9cGOC2anZ45WUDAa8XcgK76rtS8DnwFuIWo9hxEJGef7VjXPvxiDXINlZkELKtWJ3xnxzMMn955EEnxTcxhVGXY_TCrW22gXy5viEJQx5EUNIeiZuyc1dwzivqiZ9htQxulQgdEQmc86GlEYNKuxQA67V9KCyxtZBQDT1yYsfvGNga9XdEr1JmBYr3FlN3K24Bbeq3YTfRCx_TPRno-ZrDNNCjNQHKb3FXgfdhbDqDY91JrC3KuMhB-RrTazR0tZ"
+                src="/image/prof_pic2.png"
                 referrerPolicy="no-referrer"
               />
             </div>
