@@ -38,13 +38,15 @@ export default function Home() {
                 <FileText className="w-5 h-5" />
                 View Publications
               </Link>
-              <Link 
-                to="/image/SebinDevasia_CV.pdf"
+              <a 
+                href="/image/SebinDevasia_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-lg border-2 border-[#1754cf]/20 px-8 py-4 text-base font-bold text-[#1754cf] transition-all hover:bg-[#1754cf]/5"
               >
                 <GraduationCap className="w-5 h-5" />
                 Academic CV
-              </Link>
+              </a>
             </div>
 
             {/* Academic Profiles Integrated */}
