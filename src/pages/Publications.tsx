@@ -198,7 +198,7 @@ export default function Publications() {
     >
       <div className="max-w-4xl w-full">
         <div className="mb-12">
-          <h1 className="text-slate-900 text-4xl font-black leading-tight tracking-tight mb-4 italic">Selected Publications</h1>
+          <h1 className="text-slate-900 text-4xl font-black leading-tight tracking-tight mb-4">Publications</h1>
           
         </div>
 
