@@ -34,7 +34,7 @@ export default function Navbar() {
               key={link.path}
               to={link.path}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-[#1754cf]",
+                "text-[1.10rem] font-medium transition-colors hover:text-[#1754cf]",
                 location.pathname === link.path ? "text-[#1754cf] font-bold" : "text-slate-600"
               )}
             >
