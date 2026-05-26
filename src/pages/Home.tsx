@@ -72,7 +72,7 @@ export default function Home() {
                 <a className="flex items-center gap-2 text-slate-500 transition-colors hover:text-[#1754cf]" href="https://psgitech.irins.org/profile/651928" target="_blank" rel="noopener noreferrer">
                   <UserCheck className="w-5 h-5" />
                   <span className="font-bold text-sm">Vidwan</span>
-                </a
+                </a>
                 <a className="flex items-center gap-2 text-slate-500 transition-colors hover:text-[#1754cf]" href="https://www.researchgate.net/profile/Sebin-Devasia?ev=hdr_xprf" target="_blank" rel="noopener noreferrer">
                   <UserCheck className="w-5 h-5" />
                   <span className="font-bold text-sm">ResearchGate</span>
