@@ -12,8 +12,7 @@ export default function Navbar() {
     { name: 'Publications', path: '/publications' },
     { name: 'Projects', path: '/projects' },
     { name: 'Education', path: '/education' },
-    { name: 'CV', path: '/cv' },
-  ];
+      ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-[#f6f6f8]/80 backdrop-blur-md">
