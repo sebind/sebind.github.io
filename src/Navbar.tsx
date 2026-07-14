@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Beaker, Menu, X } from 'lucide-react';
+import { Beaker, Menu, X, GraduationCap } from 'lucide-react';
 import { cn } from './lib/utils';
 
 export default function Navbar() {
