@@ -20,7 +20,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="mx-auto max-w-7xl px-6 py-10 md:px-12 md:py-16">
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
-          <div className="order-2 lg:order-1 pt-2">
+          <div className="order-2 lg:order-1">
             <span className="mb-4 inline-block rounded-full bg-[#000435]/10 px-4 py-1 text-sm font-bold tracking-wide text-[#1754cf]">
               Assistant Professor in Physics
             </span>
