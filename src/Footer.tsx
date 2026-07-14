@@ -1,4 +1,4 @@
-import { Beaker, Mail, Share2, Podcast } from 'lucide-react';
+import { GraduationCap, Mail, Share2, Podcast } from 'lucide-react';
 
 export default function Footer() {
   return (
