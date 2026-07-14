@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 
 export default function Home() {
   const interests = [
-    { icon: <Sun className="w-8 h-8 text-[#1754cf]" />, title: "Optoelectronics", desc: "Studying the interaction of light with electronic devices for advanced imaging and sensing." },
+    { icon: <Sun className="w-8 h-8 text-[#1754cf]" />, title: "Optoelectronics", desc: "Studying the interaction of light with matter to develop electronic devices for advanced imaging and sensing." },
     { icon: <LayersIcon className="w-8 h-8 text-[#1754cf]" />, title: "Semiconductor thin films", desc: "Investigating the growth and properties of thin-film layers for high-efficiency electronics." },
     { icon: <Monitor className="w-8 h-8 text-[#1754cf]" />, title: "Computational Materials", desc: "Utilizing DFT and advanced simulations to predict novel material properties." },
     { icon: <FlaskConical className="w-8 h-8 text-[#1754cf]" />, title: "Lead-free perovskites", desc: "Developing eco-friendly, non-toxic materials for stable and efficient solar cells." },
