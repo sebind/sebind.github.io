@@ -22,7 +22,7 @@ export default function Navbar() {
             <GraduationCap className="w-6 h-6" />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-900">
-            Sebin, <span className="text-[#1754cf]">Devasia</span>
+            Sebin <span className="text-[#1754cf]">Devasia</span>
           </span>
         </Link>
 
