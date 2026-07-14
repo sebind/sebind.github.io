@@ -8,7 +8,6 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded bg-[#1754cf] text-white">
-                <GraduationCap className="w-5 h-5" />
               </div>
               <span className="text-lg font-bold">Sebin Devasia</span>
             </div>
