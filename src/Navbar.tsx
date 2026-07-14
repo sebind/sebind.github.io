@@ -12,6 +12,13 @@ export default function Navbar() {
     { name: 'Publications', path: '/publications' },
     { name: 'Projects', path: '/projects' },
     { name: 'Education', path: '/education' },
+    <Link 
+                to="https://lasergroup.vercel.app/"
+                className="flex items-center gap-2 rounded-lg bg-[#1754cf] px-8 py-4 text-base font-bold text-white transition-all hover:bg-[#1754cf]/90 hover:shadow-xl"
+              >
+                <FileText className="w-5 h-5" />
+                Research
+              </Link>
       ];
 
   return (
