@@ -25,7 +25,7 @@ export default function Home() {
               Assistant Professor in Physics
             </span>
             <h1 className="mb-6 text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-4xl">
-              <span className="[#000080]">Dr. Sebin Devasia</span>
+              <span className="text-[#000080]">Dr. Sebin Devasia</span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-slate-600">
               Exploring emerging optoelectronic and semiconductor materials through synthesis, characterization, and computational modeling to enable next-generation energy and sensing technologies.
