@@ -19,10 +19,10 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12">
         <Link to="/" className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1754cf] text-white">
-            <Beaker className="w-6 h-6" />
+            <GraduationCap className="w-6 h-6" />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-900">
-            Sebin Devasia, <span className="text-[#1754cf]">PhD</span>
+            Sebin, <span className="text-[#1754cf]">Devasia</span>
           </span>
         </Link>
 
