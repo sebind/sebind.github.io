@@ -8,9 +8,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded bg-[#1754cf] text-white">
-                <Beaker className="w-5 h-5" />
+                <GraduationCap className="w-5 h-5" />
               </div>
-              <span className="text-lg font-bold">Dr. Sebin Devasia</span>
+              <span className="text-lg font-bold">Sebin Devasia</span>
             </div>
             <p className="mt-4 text-sm text-slate-500">Advancing physics through dedicated material research.</p>
           </div>
@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-[#1754cf]/5 pt-8 text-center text-xs text-slate-400">
-          © 2026 Dr. Sebin Devasia. All rights reserved. Professional Portfolio.
+          © 2026 | All rights reserved. Professional Portfolio.
         </div>
       </div>
     </footer>
