@@ -6,9 +6,21 @@ export default function Publications() {
   const [showFullList, setShowFullList] = useState(false);
   const [selectedYear, setSelectedYear] = useState<number | "all">("all");
 
-  const years = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2015];
+  const years = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2015];
   
   const publications = [
+        {
+      year: 2026,
+      items: [
+        {
+          title: "Ultra-High Selectivity for Hydrogen Production from Formic Acid Over Pd–Ag Alloy Catalysts",
+          authors: ["Blessy S", "Anupreethi A", "S Devasia", "Pavul Raj R", "Selvakumar R", "Jun Z", "Johnravindar D"],
+          journal: "Reaction Chemistry & Engineering",
+          details: "(2026)",
+          doi: "10.1039/d6re00134c"
+        },      
+      ]
+    },
     {
       year: 2025,
       items: [
