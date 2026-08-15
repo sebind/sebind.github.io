@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Research Experience",
+    "entries": [
+      {
+        "title": "Doctoral Researcher",
+        "organization": "Example University",
+        "dates": "Sep 2024 - Present",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example University logo placeholder",
+        "flag": "GB-ENG",
+        "flag_alt": "Country flag",
+        "bullets": [
+          "Researching an example topic in the Example Research Group.",
+          "Developing methods for an example application and collaborating with domain experts."
+        ]
+      },
+      {
+        "title": "Research Assistant",
+        "organization": "Example Research Institute",
+        "dates": "Jun 2023 - Aug 2024",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example Research Institute logo placeholder",
+        "flag": "US",
+        "flag_alt": "Country flag",
+        "bullets": [
+          "Supported an interdisciplinary research project.",
+          "Analysed data and contributed to a peer-reviewed manuscript."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Teaching Experience",
+    "entries": [
+      {
+        "title": "Teaching Assistant",
+        "organization": "Example University",
+        "dates": "Jan 2025 - May 2025",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example University logo placeholder",
+        "flag": "GB-ENG",
+        "flag_alt": "Country flag",
+        "bullets": [
+          "Assisted with Example Course: Introduction to the Subject.",
+          "Led tutorials and provided feedback on coursework."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Education",
+    "entries": [
+      {
+        "title": "Doctor of Philosophy (PhD), Example Subject",
+        "organization": "Example University",
+        "dates": "2024 - Present",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example University logo placeholder",
+        "flag": "GB-ENG",
+        "flag_alt": "Country flag"
+      },
+      {
+        "title": "Master of Science, Example Subject",
+        "organization": "Example University",
+        "dates": "2022 - 2023",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example University logo placeholder",
+        "flag": "US",
+        "flag_alt": "Country flag"
+      }
+    ]
+  },
+  {
+    "title": "Honors and Awards",
+    "entries": [
+      {
+        "title": "Example Academic Award",
+        "organization": "Example Professional Society",
+        "dates": "May 2025",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Awarding organization logo placeholder",
+        "flag": "GB-ENG",
+        "flag_alt": "Country flag"
+      }
+    ]
+  }
+]

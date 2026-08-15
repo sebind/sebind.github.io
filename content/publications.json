@@ -1,0 +1,46 @@
+[
+  {
+    "id": "example-journal-article",
+    "title": "An Example Journal Article Title",
+    "content": "Jane Doe, Jamie Taylor, and Sam Lee",
+    "link": "https://doi.org/10.0000/example.2026.001",
+    "publisher": "Journal of Example Research, 2026",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["key_publications", "journal"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://example.com" },
+      { "id": 2, "title": "Code", "link": "https://github.com/your-username/example-project" }
+    ],
+    "created_at": 1767225600,
+    "updated_at": 1767225600
+  },
+  {
+    "id": "example-conference-paper",
+    "title": "An Example Conference Paper Title",
+    "content": "Jamie Taylor, Jane Doe, and Robin Smith",
+    "link": "https://example.com",
+    "publisher": "Proceedings of the Example Conference, 2025",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["key_publications", "conference"],
+    "buttons": [
+      { "id": 1, "title": "Paper", "link": "https://example.com" },
+      { "id": 2, "title": "Data", "link": "https://example.com" }
+    ],
+    "created_at": 1735689600,
+    "updated_at": 1735689600
+  },
+  {
+    "id": "example-preprint",
+    "title": "An Example Preprint Title",
+    "content": "Jane Doe and Casey Chen",
+    "link": "https://arxiv.org/",
+    "publisher": "arXiv preprint, 2024",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["preprint"],
+    "buttons": [
+      { "id": 1, "title": "Preprint", "link": "https://arxiv.org/" }
+    ],
+    "created_at": 1704067200,
+    "updated_at": 1704067200
+  }
+]

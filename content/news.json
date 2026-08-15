@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-06-15",
+    "text": "Jane presented recent research at the Example International Conference.",
+    "image": "",
+    "gif": "",
+    "url": "https://example.com",
+    "url_label": "Conference website"
+  },
+  {
+    "date": "2026-03-10",
+    "text": "Jane's paper on an example research topic was accepted for publication.",
+    "image": "",
+    "gif": ""
+  },
+  {
+    "date": "2026-01-08",
+    "text": "Jane joined Example University as a doctoral researcher.",
+    "image": "",
+    "gif": ""
+  }
+]

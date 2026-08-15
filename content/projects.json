@@ -1,0 +1,26 @@
+[
+  {
+    "id": "project-example-one",
+    "title": "Example Research Project",
+    "summary": "A concise description of the research question, method, and intended impact of this project.",
+    "image": "assets/images/project-placeholder.svg",
+    "image_alt": "Example Research Project placeholder image",
+    "url": "pages/projects/project-example-one.html"
+  },
+  {
+    "id": "project-example-two",
+    "title": "Example Collaborative Project",
+    "summary": "A second example showing how to describe collaborative or interdisciplinary research.",
+    "image": "assets/images/project-placeholder.svg",
+    "image_alt": "Example Collaborative Project placeholder image",
+    "url": "pages/projects/project-example-two.html"
+  },
+  {
+    "id": "project-external",
+    "title": "Project with an External Website",
+    "summary": "Project cards may also link directly to an external project website or software demonstration.",
+    "image": "assets/images/project-placeholder.svg",
+    "image_alt": "External project placeholder image",
+    "url": "https://example.com"
+  }
+]
