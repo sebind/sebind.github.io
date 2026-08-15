@@ -1,49 +1,64 @@
 [
   {
-    "title": "Research Experience",
+    "title": "Experience",
     "entries": [
       {
-        "title": "Doctoral Researcher",
-        "organization": "Example University",
-        "dates": "Sep 2024 - Present",
+        "title": "Assistant Professor",
+        "organization": "PSG Institute of Technology and Applied Research, Coimbatore, India",
+        "dates": "Jan 2025 - Present",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
-        "flag": "GB-ENG",
+        "flag": "IND",
         "flag_alt": "Country flag",
         "bullets": [
-          "Researching an example topic in the Example Research Group.",
-          "Developing methods for an example application and collaborating with domain experts."
+          "PI of Laboratory for Atomistic Simulations and Energy materials Research (LASEmR group)",
+          "DFT calculations using Quantum ESPRESSO and generative models for materials design in photocatalysis, thermoelectrics and photovoltaics.",
+          "Synthesis of lead-free halides, chalcogenides and chalcohalide light absorbers.",
+          "Guiding masters project students."
         ]
       },
       {
-        "title": "Research Assistant",
-        "organization": "Example Research Institute",
-        "dates": "Jun 2023 - Aug 2024",
-        "logo": "assets/images/institution-placeholder.svg",
-        "logo_alt": "Example Research Institute logo placeholder",
-        "flag": "US",
-        "flag_alt": "Country flag",
-        "bullets": [
-          "Supported an interdisciplinary research project.",
-          "Analysed data and contributed to a peer-reviewed manuscript."
-        ]
-      }
-    ]
-  },
-  {
-    "title": "Teaching Experience",
-    "entries": [
-      {
-        "title": "Teaching Assistant",
-        "organization": "Example University",
-        "dates": "Jan 2025 - May 2025",
+        "title": "Assistant Professor",
+        "organization": "PSG Institute of Advanced Studies, Coimbatore, India",
+        "dates": "Oct 2023 - Jan 2025",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
-        "flag": "GB-ENG",
+        "flag": "IND",
         "flag_alt": "Country flag",
         "bullets": [
-          "Assisted with Example Course: Introduction to the Subject.",
-          "Led tutorials and provided feedback on coursework."
+          "PI of Laboratory for Atomistic Simulations and Energy materials Research (LASEmR group)",
+          "DFT calculations using Quantum ESPRESSO and generative models for materials design in photocatalysis, thermoelectrics and photovoltaics.",
+          "Synthesis of lead-free halides, chalcogenides and chalcohalide light absorbers.",
+          "Guiding masters project students."
+        ]
+      },
+      {
+        "title": "Doctoral researcher",
+        "organization": "Universidad Autónoma de Nuevo León (UANL), Monterrey, Mexico",
+        "dates": "Jan 2019 - May 2023",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example Research Institute logo placeholder",
+        "flag": "MX",
+        "flag_alt": "Country flag",
+        "bullets": [
+          "Deposition of Cs3Bi2I9 thin films using ultrasonic spray deposition method.",
+          "Structural, optical, electronic, morphological characterization of thin films.",
+          "Fabrication of photodetectors and photovoltaic devices and analysis.",
+          "DFT calculations for structure optimization, electronic band structure and density of states of bismuth halides using VASP."
+        ]
+      },
+      {
+        "title": "Junior/Senior Research Fellow, DAE-BRNS Project",
+        "organization": "Union Christian College, Aluva, India",
+        "dates": "July 2015 - March 2018",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example Research Institute logo placeholder",
+        "flag": "IND",
+        "flag_alt": "Country flag",
+        "bullets": [
+          "Investigation of highly conducting Al-doped ZnO (n-Type) and P or N doped ZnO(p-Type) thin films by spray pyrolysis.",
+          "Chemical methods to grow vertically aligned ZnO nanorods on spray-deposited seed layers.",
+          "Fabrication of translucent n-ZnO/p-ZnO homojunction diodes."
         ]
       }
     ]
@@ -52,21 +67,21 @@
     "title": "Education",
     "entries": [
       {
-        "title": "Doctor of Philosophy (PhD), Example Subject",
-        "organization": "Example University",
-        "dates": "2024 - Present",
+        "title": "Doctor of Philosophy (PhD), Materials Engineering",
+        "organization": "Universidad Autónoma de Nuevo León (UANL)",
+        "dates": "2019 - 2023",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
-        "flag": "GB-ENG",
+        "flag": "MX",
         "flag_alt": "Country flag"
       },
       {
-        "title": "Master of Science, Example Subject",
-        "organization": "Example University",
-        "dates": "2022 - 2023",
+        "title": "Master of Science, Physics",
+        "organization": "National Institute of Technology (NIT) Tiruchirappalli",
+        "dates": "June 2012 - August 2014",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
-        "flag": "US",
+        "flag": "IND",
         "flag_alt": "Country flag"
       }
     ]
@@ -75,12 +90,21 @@
     "title": "Honors and Awards",
     "entries": [
       {
-        "title": "Example Academic Award",
-        "organization": "Example Professional Society",
-        "dates": "May 2025",
+        "title": "Sciences Academies Summer Research Fellowship",
+        "organization": "Indian Academy of Sciences",
+        "dates": "2024",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Awarding organization logo placeholder",
         "flag": "GB-ENG",
+        "flag_alt": "Country flag"
+      },
+      {
+        "title": "CONACYT Doctoral Fellowship",
+        "organization": "CONACYT, Mexico",
+        "dates": "2019",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Awarding organization logo placeholder",
+        "flag": "MX",
         "flag_alt": "Country flag"
       }
     ]

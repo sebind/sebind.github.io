@@ -1,19 +1,19 @@
 [
   {
-    "id": "project-example-one",
-    "title": "Example Research Project",
-    "summary": "A concise description of the research question, method, and intended impact of this project.",
+    "id": "project-one",
+    "title": "An Integrated Approach in Advancement of Quaternary Oxychalcogenide Synthesis for Thermoelectric Application",
+    "summary": "Funding Agency: UGC-CSR Ref. No. CRS/2023-24/04/1315, Duration: 2024-2027, Fund: 12 L, Role: Co-PI",
     "image": "assets/images/project-placeholder.svg",
     "image_alt": "Example Research Project placeholder image",
-    "url": "pages/projects/project-example-one.html"
+    "url": "pages/projects/project-one.html"
   },
   {
-    "id": "project-example-two",
-    "title": "Example Collaborative Project",
-    "summary": "A second example showing how to describe collaborative or interdisciplinary research.",
+    "id": "project-two",
+    "title": "Design and Development of Functional Materials for Hydrogen Storage and Carbon Capture via First-Principles Density Functional Theory and Integrated machine learning approaches",
+    "summary": "Density Functional Theory and Machine Learning is used to identify potential materials for hydrogen storage and carbon capture",
     "image": "assets/images/project-placeholder.svg",
     "image_alt": "Example Collaborative Project placeholder image",
-    "url": "pages/projects/project-example-two.html"
+    "url": "pages/projects/project-two.html"
   },
   {
     "id": "project-external",

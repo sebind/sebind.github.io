@@ -1,46 +1,580 @@
 [
   {
-    "id": "example-journal-article",
-    "title": "An Example Journal Article Title",
-    "content": "Jane Doe, Jamie Taylor, and Sam Lee",
-    "link": "https://doi.org/10.0000/example.2026.001",
-    "publisher": "Journal of Example Research, 2026",
+    "id": "ultra-high-selectivity-hydrogen-production-formic-acid",
+    "title": "Ultra-High Selectivity for Hydrogen Production from Formic Acid Over Pd–Ag Alloy Catalysts",
+    "content": "Blessy S, Anupreethi A, S Devasia, Pavul Raj R, Selvakumar R, Jun Z, Johnravindar D",
+    "link": "",
+    "publisher": "Reaction Chemistry & Engineering, 2026",
     "image": "assets/images/publications/placeholder-cover.svg",
-    "tags": ["key_publications", "journal"],
-    "buttons": [
-      { "id": 1, "title": "Publisher", "link": "https://example.com" },
-      { "id": 2, "title": "Code", "link": "https://github.com/your-username/example-project" }
+    "tags": [
+      "key_publications",
+      "journal"
     ],
-    "created_at": 1767225600,
-    "updated_at": 1767225600
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
   },
   {
-    "id": "example-conference-paper",
-    "title": "An Example Conference Paper Title",
-    "content": "Jamie Taylor, Jane Doe, and Robin Smith",
-    "link": "https://example.com",
-    "publisher": "Proceedings of the Example Conference, 2025",
+    "id": "surface-roughened-silver-wires-plasmonic-hotspots",
+    "title": "Surface-Roughened Silver Wires with Uniformly Distributed Plasmonic Hotspots for Highly Sensitive Surface-Enhanced Raman Scattering Applications",
+    "content": "A Thazhathenair, O Prakash, S Devasia, G Robert, FT Kalathingal",
+    "link": "",
+    "publisher": "ACS Applied Optical Materials 3 (12), 2971-2981",
     "image": "assets/images/publications/placeholder-cover.svg",
-    "tags": ["key_publications", "conference"],
-    "buttons": [
-      { "id": 1, "title": "Paper", "link": "https://example.com" },
-      { "id": 2, "title": "Data", "link": "https://example.com" }
+    "tags": [
+      "journal"
     ],
-    "created_at": 1735689600,
-    "updated_at": 1735689600
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
   },
   {
-    "id": "example-preprint",
-    "title": "An Example Preprint Title",
-    "content": "Jane Doe and Casey Chen",
-    "link": "https://arxiv.org/",
-    "publisher": "arXiv preprint, 2024",
+    "id": "optimization-hole-transport-layers-cu2feSnS4",
+    "title": "Optimization of Hole Transport Layers for Cu2FeSnS4 Solar Cells via SCAPS-1D Simulation: Investigating the Impact of Interface Defects on Practical Efficiency Limits",
+    "content": "MK Jyolsna Raj, Kallol Mohanta, S. Devasia, B Geetha Priyadarshini",
+    "link": "",
+    "publisher": "Journal of Physics and Chemistry of Solids 208 (2025), 113193",
     "image": "assets/images/publications/placeholder-cover.svg",
-    "tags": ["preprint"],
-    "buttons": [
-      { "id": 1, "title": "Preprint", "link": "https://arxiv.org/" }
+    "tags": [
+      "journal",
+      "solar_cells",
+      "scaps"
     ],
-    "created_at": 1704067200,
-    "updated_at": 1704067200
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "high-aspect-ratio-zno-nanorods-pec-water-splitting",
+    "title": "High Aspect Ratio ZnO Nanorods for Improved Photoelectrochemical (PEC) Water Splitting Performances and Efficient Photocatalytic Hydrogen Evolution: An Integrated Experimental and DFT Studies",
+    "content": "A Das, S. Devasia, Nisha Banerjee, RG Nair",
+    "link": "",
+    "publisher": "Applied Surface Science 699 (2025), 163160",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "zno",
+      "water_splitting",
+      "dft"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "dual-role-fe-photocatalytic-performance-titania",
+    "title": "An experimental and theoretical validation of dual role of Fe on improving the photocatalytic performance of doped mixed phase titania",
+    "content": "SK Nikhil, GR Nair, A Das, S. Devasia, RG Nair",
+    "link": "",
+    "publisher": "Advanced Powder Technology 35 (11) (2024), 104683",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "photocatalysis",
+      "titania"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "thermoelectric-zufe2o4-ni-substitution",
+    "title": "Enhancing thermoelectric properties of spinel ZnFe2O4 by Ni substitution through electron hopping mechanism",
+    "content": "John, N., Davis, N., Roshan, J. C., Hussain, S., S. Devasia, Srinivasan, B., & Ashok, A. M.",
+    "link": "",
+    "publisher": "Ceramics International 50 (22) (2024), 45251-45262",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "thermoelectric",
+      "znfe2o4"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "sn-cl-codoped-beta-ga2o3-uv-detectors",
+    "title": "Characterisation of Sn-Cl co-doped β-Ga2O3 thin films deposited via spray pyrolysis and their application in UV detector devices",
+    "content": "R Raphael, S. Devasia, S. Shaji, E.I. Anila",
+    "link": "",
+    "publisher": "Sensors and Actuators A: Physical 376 (2024), 115546",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "ga2o3",
+      "uv_detector"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "bi2s3-nanorods-cs3bi2i9-photodetector",
+    "title": "In situ grown Bi2S3 nanorods in Cs3Bi2I9 thin films as broadband self-driven photodetector with improved photostability",
+    "content": "S. Devasia, S. Shaji, D.A. Avellaneda, J.A. Aguilar Martinez, B. Krishnan",
+    "link": "",
+    "publisher": "Optical Materials 152 (2024), 115532",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "key_publications",
+      "journal",
+      "photodetector",
+      "cs3bi2i9"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "ultrasonically-sprayed-cs3bi2i9-photodetector",
+    "title": "Ultrasonically sprayed Cs3Bi2I9 thin film based self-powered photodetector",
+    "content": "S. Devasia, S. Shaji, D.A. Avellaneda, J.A. Aguilar Martinez, B. Krishnan",
+    "link": "",
+    "publisher": "Materials Chemistry and Physics 296 (2023), 127295",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "key_publications",
+      "journal",
+      "photodetector",
+      "cs3bi2i9"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "effect-substrate-temperature-ga2o3",
+    "title": "Effect of substrate temperature on the properties of spray deposited Ga2O3 thin films, for solar blind UV detector applications",
+    "content": "R. Raphael, S. Devasia, S. Shaji, Anila EI",
+    "link": "",
+    "publisher": "Optical Materials 133 (2022), 112915",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "ga2o3",
+      "uv_detector"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "in-situ-crystallization-cs3bi2i9",
+    "title": "In situ crystallization of 0D perovskite derivative Cs3Bi2I9 thin films via ultrasonic spray",
+    "content": "S. Devasia, S. Shaji, D.A. Avellaneda, J.A. Aguilar Martinez, B. Krishnan",
+    "link": "",
+    "publisher": "Journal of Alloys and Compounds 893 (2021), 162294",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "key_publications",
+      "journal",
+      "cs3bi2i9",
+      "perovskite"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "sn6sb10s21-thin-films",
+    "title": "Tin antimony sulfide (Sn6Sb10S21) thin films by heating chemically deposited Sb2S3/SnS layers: Studies on the structure and their optoelectronic properties",
+    "content": "S. Devasia, S. Shaji, D.A. Avellaneda, J.A. Aguilar Martinez, B. Krishnan",
+    "link": "",
+    "publisher": "Journal of Alloys and Compounds 827 (2020), 154256",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "thin_films",
+      "optoelectronics",
+      "sulfides"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "monoclinic-agsbs2-thin-films",
+    "title": "Monoclinic AgSbS2 thin films for photovoltaic applications: Computation, growth and characterization approaches",
+    "content": "A. Nadukkandy, S. Devasia, P. Abraham, S. Shaji, D.A. Avellaneda, J.A. Aguilar-Martínez, E.G. Martinez, R.F. Cienfuegos-Pelaes, B. Krishnan",
+    "link": "https://doi.org/10.1016/j.mssp.2021.106074",
+    "publisher": "Materials Science in Semiconductor Processing 135 (2021), 106074",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "key_publications",
+      "journal",
+      "agsbs2",
+      "photovoltaics",
+      "dft"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": "https://doi.org/10.1016/j.mssp.2021.106074"
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "photosensitive-antimony-triiodide-thin-films",
+    "title": "Photosensitive antimony triiodide thin films by rapid iodization of chemically deposited antimony sulfide",
+    "content": "A.A. Ramachandran, B. Krishnan, S. Devasia, D.A. Avellaneda, M.I. Mendivil Palma, J.A. Aguilar Martinez, S. Shaji",
+    "link": "https://doi.org/10.1016/j.materresbull.2021.111382",
+    "publisher": "Materials Research Bulletin 142 (2021), 111382",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "antimony_triiodide",
+      "thin_films"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": "https://doi.org/10.1016/j.materresbull.2021.111382"
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "al-doped-cdzns-photodetector",
+    "title": "Metal–semiconductor–metal visible photodetector based on Al-doped (Cd:Zn)S nano thin films by hydrothermal synthesis",
+    "content": "J. Mathew, S. Devasia, S. Shaji, E.I. Anila",
+    "link": "https://doi.org/10.1016/j.ijleo.2021.166878",
+    "publisher": "Optik 241 (2021), 166878",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "photodetector",
+      "cdzns"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": "https://doi.org/10.1016/j.ijleo.2021.166878"
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "blue-light-gahnite-nanorods",
+    "title": "Spectral and nonlinear optical characterization of blue light emitting gahnite nanorods synthesized through radiation assisted sol-gel method",
+    "content": "P. J. Joffy, V. G. Sreeja, S. Devasia and E. I. Anila",
+    "link": "",
+    "publisher": "Solid State Sciences 96 (2019), 105947",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "nanorods",
+      "nonlinear_optics"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "zno-unipolarity-dual-acceptor-doping",
+    "title": "Controlling the zinc oxide unipolarity through dual acceptor doping for spray-cast homojunction diode",
+    "content": "S. Devasia, P. V. Athma and E. I. Anila",
+    "link": "",
+    "publisher": "Materials Letters 238 (2019), 112–115",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "zno",
+      "homojunction"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "post-deposition-thermal-treatment-zno-al",
+    "title": "Post-deposition thermal treatment of sprayed ZnO:Al thin films for enhancing the conductivity",
+    "content": "S. Devasia, P. V. Athma, M. Shaji, M. C. S. Kumar and E. I. Anila",
+    "link": "",
+    "publisher": "Physica B: Condensed Matter 533 (2018), 83–89",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "zno",
+      "thin_films",
+      "conductivity"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "p-n-dual-acceptor-doped-p-type-zno",
+    "title": "Investigation on P-N dual acceptor doped p-type ZnO thin films and subsequent growth of pencil-like nanowires",
+    "content": "R. Amiruddin, S. Devasia, K. Mohammedali, M. C. Santhosh Kumar",
+    "link": "",
+    "publisher": "Semiconductor Science and Technology 30 (2015), 035009",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "journal",
+      "zno",
+      "nanowires"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "source-substrate-distance-zno-transparent-electrode",
+    "title": "Effect of source-substrate distance on the transparent electrode properties of spray pyrolysed aluminium doped zinc oxide thin films",
+    "content": "S. Devasia, P.V. Athma, Rakhy Raphael, E.I. Anila",
+    "link": "https://doi.org/10.1016/j.matpr.2021.10.203",
+    "publisher": "Materials Today: Proceedings, 2021, ISSN 2214-7853",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "conference_proceedings",
+      "zno",
+      "transparent_electrode"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": "https://doi.org/10.1016/j.matpr.2021.10.203"
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "p-type-sr-cu-o-mixed-phase",
+    "title": "A Study on the Emergence of P-Type Behaviour in Sr-Cu-O Mixed Phase Systems",
+    "content": "A. Mariya Thomas, S. Salam, M. C. Santhoshkumar, S. Devasia and E. I. Anila",
+    "link": "",
+    "publisher": "Journal of Physics: Conference Series 1172 (2019), 012008",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "conference_proceedings",
+      "p-type",
+      "sr-cu-o"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "bismuth-triiodide-ab-initio-simulations",
+    "title": "Bismuth triiodide: Ab-initio simulations to spray cast thin films for optoelectronic applications",
+    "content": "S. Devasia, S. Shaji, D.A. Avellaneda, J.A. Aguilar Martinez, B. Krishnan, Sebin Devasia",
+    "link": "",
+    "publisher": "Scientia 15 (2019), 98-111",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "conference_proceedings",
+      "bii3",
+      "dft",
+      "optoelectronics"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "surface-morphology-al-doped-zno-nanorods",
+    "title": "Tuning the surface morphology of aluminium doped zinc oxide thin films by arrayed nanorods through chemical growth process",
+    "content": "S. Devasia and E. I. Anila",
+    "link": "",
+    "publisher": "AIP Conference Proceedings 1942 (2018), 080018",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "conference_proceedings",
+      "zno",
+      "nanorods"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "cdzns-hydrothermal-chemical-bath-deposition",
+    "title": "Synthesis and characterization of photoconducting (Cd:Zn)S thin films by hydrothermal assisted chemical bath deposition",
+    "content": "J. Mathew, S. Devasia, and E. I. Anila",
+    "link": "",
+    "publisher": "AIP Conference Proceedings 1942 (2018), 080080",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "conference_proceedings",
+      "cdzns",
+      "thin_films"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "structural-electrical-transmitting-al-doped-zno",
+    "title": "Investigation on the Structural, Electrical and Transmitting properties of Aluminium doped ZnO thin films",
+    "content": "S. Devasia, P V Athma, Anumol Jose and E I Anila",
+    "link": "",
+    "publisher": "IOP Conference Series: Materials Science and Engineering 149 (2016), 012077",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "conference_proceedings",
+      "zno",
+      "thin_films"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
+  },
+  {
+    "id": "nonlinear-optical-graphite-oxide",
+    "title": "Nonlinear optical characterization of graphite oxide thin film by open aperture Z-scan technique",
+    "content": "V G Sreeja, Ajina Cheruvalathu, S. Devasia, E I Anila",
+    "link": "",
+    "publisher": "AIP Conference Proceedings 1731 (2016), 080023",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": [
+      "conference_proceedings",
+      "graphite_oxide",
+      "nonlinear_optics"
+    ],
+    "buttons": [
+      {
+        "id": 1,
+        "title": "Publisher",
+        "link": ""
+      }
+    ],
+    "created_at": 1786752000,
+    "updated_at": 1786752000
   }
 ]
