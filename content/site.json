@@ -3,7 +3,7 @@
   "short_name": "Sebin",
   "publication_name": "Sebin Devasia",
   "citation_name": "S. Devasia",
-  "email_display": "sebindevasia@psgitech.ac.in",
+  "email_display": "sebin@psgitech.ac.in",
   "site_title": "Sebin Devasia | Academic Website",
   "description": "Academic website of Sebin Devasia",
   "copyright_year": 2026,
@@ -52,11 +52,11 @@
       "description": "Curriculum Vitae of Sebin Devasia."
     }
   },
-  "profile_image": "assets/images/profile-placeholder.svg",
+  "profile_image": "assets/images/prof_pic2.png",
   "profile_image_alt": "Sebin Devasia profile photo placeholder",
   "bio_html": "Dr. Sebin is exploring emerging optoelectronic and semiconductor materials through synthesis, characterization, and computational modeling to enable next-generation energy and sensing technologies.",
   "contact": [
-    "sebindevasia [at] psgitech [dot] ac [dot] in",
+    "sebin@psgitech.ac.in",
     "Physics department, PSG Institute of Technology and Applied Research, Coimbatore, India"
   ],
   "social_links": [
