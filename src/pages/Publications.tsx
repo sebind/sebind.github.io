@@ -13,6 +13,13 @@ export default function Publications() {
       year: 2026,
       items: [
         {
+          title: "Rational Design of Star-Shaped Donor−Acceptor Organic Small-Molecule/GCN Heterostructures for Superior Photocatalytic Hydrogen Evolution and Photoelectrocatalytic Water Splitting Applications",
+          authors: ["Govindasamy Sathiyan", "Gayathri Kumaresan", "Geetha Venkatesan", "Sebin Devasia", "Pachagounder Sakthivel", "Nisha Banerjee", "Ranjith G. Nair", "Abinash Das"],
+          journal: "ACS Applied Engineering Materials",
+          details: "(2026)",
+          doi: "10.1021/acsaenm.6c00868"
+        },
+        {
           title: "Ultra-High Selectivity for Hydrogen Production from Formic Acid Over Pd–Ag Alloy Catalysts",
           authors: ["Blessy S", "Anupreethi A", "S Devasia", "Pavul Raj R", "Selvakumar R", "Jun Z", "Johnravindar D"],
           journal: "Reaction Chemistry & Engineering",
