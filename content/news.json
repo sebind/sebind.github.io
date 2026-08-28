@@ -1,21 +1,23 @@
 [
   {
-    "date": "2026-06-15",
-    "text": "Jane presented recent research at the Example International Conference.",
+    "date": "2025-08-08",
+    "text": "Collaborative work published in Journal of Physics and Chemistry of Solids",
     "image": "",
     "gif": "",
-    "url": "https://example.com",
-    "url_label": "Conference website"
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022369725006468",
+    "url_label": "Read more.."
   },
   {
-    "date": "2026-03-10",
-    "text": "Jane's paper on an example research topic was accepted for publication.",
+    "date": "2025-04-10",
+    "text": "Collaborative work published in Applied Surface Science",
     "image": "",
     "gif": ""
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0169433225008748",
+    "url_label": "Read more.."
   },
   {
-    "date": "2026-01-08",
-    "text": "Jane joined Example University as a doctoral researcher.",
+    "date": "2024-03-04",
+    "text": "Research proposal approved by UGC-DAE CSR under the Collaborative Research Scheme",
     "image": "",
     "gif": ""
   }
