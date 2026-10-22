@@ -217,16 +217,15 @@ export default function Publications() {
     >
       <div className="max-w-4xl w-full">
         <div className="mb-12">
-          <h1 className="text-slate-900 text-4xl font-black leading-tight tracking-tight mb-4">Publications</h1>
-          
+          <h1 className="text-[#09323c] text-4xl font-black leading-tight tracking-tight mb-4">Publications</h1>
         </div>
 
-        <div className="sticky top-0 z-10 py-6 bg-[#f6f6f8]/95 backdrop-blur-md mb-8 border-b border-slate-200">
+        <div className="sticky top-0 z-10 py-6 bg-[#faf7f0]/95 backdrop-blur-md mb-8 border-b border-[#0f4c5c]/15">
           <div className="flex flex-col gap-6">
             <div className="flex gap-3 overflow-x-auto pb-2">
               <button 
                 onClick={() => setSelectedYear("all")}
-                className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 shadow-md transition-all ${selectedYear === "all" ? "bg-[#1754cf] text-white" : "bg-white text-slate-700 border border-slate-200"}`}
+                className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 shadow-md transition-all ${selectedYear === "all" ? "bg-[#0f4c5c] text-[#faf7f0]" : "bg-[#fffdf9] text-[#2c4c54] border border-[#0f4c5c]/20"}`}
               >
                 <span className="text-sm font-semibold">All Years</span>
               </button>
@@ -234,13 +233,13 @@ export default function Publications() {
                 <button 
                   key={y} 
                   onClick={() => setSelectedYear(y)}
-                  className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 transition-all ${selectedYear === y ? "bg-[#1754cf] text-white shadow-md" : "bg-white text-slate-700 border border-slate-200 hover:border-[#1754cf]"}`}
+                  className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 transition-all ${selectedYear === y ? "bg-[#0f4c5c] text-[#faf7f0] shadow-md" : "bg-[#fffdf9] text-[#2c4c54] border border-[#0f4c5c]/20 hover:border-[#0f4c5c]"}`}
                 >
                   <span className="text-sm font-medium">{y}</span>
                 </button>
               ))}
-              <div className="w-px h-6 self-center bg-slate-300 mx-2"></div>
-              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white text-slate-700 border border-slate-200 px-5 hover:border-[#1754cf] transition-all">
+              <div className="w-px h-6 self-center bg-[#0f4c5c]/20 mx-2"></div>
+              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#fffdf9] text-[#2c4c54] border border-[#0f4c5c]/20 px-5 hover:border-[#0f4c5c] transition-all">
                 <span className="text-sm font-medium">Journal Articles</span>
               </button>
             </div>
@@ -258,31 +257,31 @@ export default function Publications() {
                 transition={{ duration: 0.4 }}
               >
                 <div className="flex items-center gap-4 mb-8">
-                  <h2 className="text-3xl font-bold text-[#1754cf]">{group.year}</h2>
-                  <div className="h-[2px] grow bg-gradient-to-r from-[#1754cf]/30 to-transparent"></div>
+                  <h2 className="text-3xl font-bold text-[#0f4c5c]">{group.year}</h2>
+                  <div className="h-[2px] grow bg-gradient-to-r from-[#0f4c5c]/30 to-transparent"></div>
                 </div>
                 <div className="space-y-10">
                   {group.items.map((pub, pIdx) => (
                     <div key={pIdx} className="group">
-                      <h3 className="text-xl font-bold text-slate-900 leading-snug group-hover:text-[#1754cf] transition-colors cursor-pointer mb-2">
+                      <h3 className="text-xl font-bold text-[#09323c] leading-snug group-hover:text-[#0f4c5c] transition-colors cursor-pointer mb-2">
                         {pub.title}
                       </h3>
-                      <p className="text-slate-600 text-base mb-2 italic">
+                      <p className="text-[#2c4c54] text-base mb-2 italic">
                         {pub.authors.map((a, i) => (
                           <span key={i}>
                             {a === "Sebin Devasia" || a === "S Devasia" || a === "S. Devasia" ? (
-                              <span className="underline decoration-[#1754cf] font-semibold text-slate-800">{a}</span>
+                              <span className="underline decoration-[#0f4c5c] font-semibold text-[#09323c]">{a}</span>
                             ) : a}
                             {i < pub.authors.length - 1 ? ", " : ""}
                           </span>
                         ))}
                       </p>
-                      <p className="text-slate-500 text-sm mb-4">
+                      <p className="text-[#4f6d75] text-sm mb-4">
                         <span className="italic font-medium">{pub.journal}</span> {pub.details}
                       </p>
                       <div className="flex flex-wrap gap-4">
                         <a 
-                          className="flex items-center gap-1.5 text-sm font-semibold text-[#1754cf] hover:opacity-80 transition-opacity" 
+                          className="flex items-center gap-1.5 text-sm font-semibold text-[#0f4c5c] hover:opacity-80 transition-opacity" 
                           href={getDoiLink(pub.doi)}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -290,7 +289,7 @@ export default function Publications() {
                           <FileText className="w-4 h-4" /> View Paper
                         </a>
                         <a 
-                          className="flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-[#1754cf] transition-colors" 
+                          className="flex items-center gap-1.5 text-sm font-semibold text-[#2c4c54] hover:text-[#0f4c5c] transition-colors" 
                           href={getScholarLink(pub.title)}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -298,7 +297,7 @@ export default function Publications() {
                           <Quote className="w-4 h-4" /> Citations
                         </a>
                         <a 
-                          className="flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-[#1754cf] transition-colors" 
+                          className="flex items-center gap-1.5 text-sm font-semibold text-[#2c4c54] hover:text-[#0f4c5c] transition-colors" 
                           href={getScholarLink(pub.title)}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -315,10 +314,10 @@ export default function Publications() {
         </div>
 
         {!showFullList && (
-          <div className="mt-16 pt-12 border-t border-slate-200 flex justify-center">
+          <div className="mt-16 pt-12 border-t border-[#0f4c5c]/15 flex justify-center">
             <button 
               onClick={() => setShowFullList(true)}
-              className="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 text-slate-700 font-semibold hover:bg-[#1754cf] hover:text-white transition-all group"
+              className="flex items-center gap-2 px-6 py-3 rounded-full bg-[#f0ebe0] text-[#09323c] font-semibold hover:bg-[#0f4c5c] hover:text-[#faf7f0] transition-all group"
             >
               Load older publications
               <Expand className="w-4 h-4 rotate-90 group-hover:scale-110 transition-transform" />

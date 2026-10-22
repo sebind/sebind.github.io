@@ -12,18 +12,18 @@ export default function Navbar() {
     { name: 'Publications', path: '/publications' },
     { name: 'Projects', path: '/projects' },
     { name: 'Education', path: '/education' },
-    { name: 'Research website', path:'https://lasergroup.vercel.app/' },
-      ];
+    { name: 'Contact', path: '/contact' },
+  ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-[#f6f6f8]/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-[#0f4c5c]/15 bg-[#faf7f0]/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12">
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1754cf] text-white">
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#0f4c5c] text-[#faf7f0]">
             <GraduationCap className="w-6 h-6" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-slate-900">
-            Sebin <span className="text-[#1754cf]">Devasia</span>
+          <span className="font-display text-xl font-bold tracking-tight text-[#09323c]">
+            Sebin <span className="text-[#0f4c5c]">Devasia</span>
           </span>
         </Link>
 
@@ -34,8 +34,8 @@ export default function Navbar() {
               key={link.path}
               to={link.path}
               className={cn(
-                "text-[1.10rem] font-medium transition-colors hover:text-[#1754cf]",
-                location.pathname === link.path ? "text-[#1754cf] font-bold" : "text-slate-600"
+                "text-[1.10rem] font-medium transition-colors hover:text-[#0f4c5c]",
+                location.pathname === link.path ? "text-[#0f4c5c] font-bold" : "text-[#2c4c54]"
               )}
             >
               {link.name}
@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <button 
-            className="md:hidden text-slate-900"
+            className="md:hidden text-[#09323c]"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}
@@ -55,7 +55,7 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-slate-200 px-6 py-4">
+        <div className="md:hidden bg-[#fffdf9] border-b border-[#0f4c5c]/15 px-6 py-4">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
@@ -63,7 +63,7 @@ export default function Navbar() {
                 to={link.path}
                 className={cn(
                   "text-sm font-medium",
-                  location.pathname === link.path ? "text-[#1754cf]" : "text-slate-600"
+                  location.pathname === link.path ? "text-[#0f4c5c] font-bold" : "text-[#2c4c54]"
                 )}
                 onClick={() => setIsOpen(false)}
               >

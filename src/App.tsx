@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Publications from './pages/Publications';
 import Education from './pages/Education';
 import CV from './pages/CV';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/publications" element={<Publications />} />
           <Route path="/education" element={<Education />} />
           <Route path="/cv" element={<CV />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
