@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Award, Share2, Download, Globe } from 'lucide-react';
+import { Briefcase, GraduationCap, Globe } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function Education() {
@@ -79,7 +79,7 @@ export default function Education() {
                   <div className="flex items-center gap-2">
                     <p className="text-[#2c4c54] font-medium">{exp.institution}</p>
                     {exp.url && (
-                      <a href={exp.url} target="_blank" rel="noopener noreferrer" className="text-[#4f6d75] hover:text-[#0f4c5c] transition-colors">
+                      <a href={exp.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${exp.institution} website`} className="text-[#4f6d75] hover:text-[#0f4c5c] transition-colors">
                         <Globe className="w-4 h-4" />
                       </a>
                     )}
@@ -109,7 +109,7 @@ export default function Education() {
                 <div className="flex items-center gap-2 mb-3">
                   <p className="text-[#2c4c54] font-medium">{edu.institution}</p>
                   {edu.url && (
-                    <a href={edu.url} target="_blank" rel="noopener noreferrer" className="text-[#4f6d75] hover:text-[#0f4c5c] transition-colors">
+                    <a href={edu.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${edu.institution} website`} className="text-[#4f6d75] hover:text-[#0f4c5c] transition-colors">
                       <Globe className="w-4 h-4" />
                     </a>
                   )}
@@ -130,7 +130,7 @@ export default function Education() {
                 <h4 className="font-bold text-[#09323c] mt-1">B.Sc. Physics</h4>
                 <div className="flex items-center gap-2 mt-1">
                   <p className="text-xs text-[#2c4c54]">Mahatma Gandhi University Kottayam, India</p>
-                  <a href="https://www.mgu.ac.in/" target="_blank" rel="noopener noreferrer" className="text-[#4f6d75] hover:text-[#0f4c5c] transition-colors">
+                  <a href="https://www.mgu.ac.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mahatma Gandhi University website" className="text-[#4f6d75] hover:text-[#0f4c5c] transition-colors">
                     <Globe className="w-3 h-3" />
                   </a>
                 </div>

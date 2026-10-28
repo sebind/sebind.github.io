@@ -21,5 +21,10 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
     font-size-adjust: from-font;
+    text-wrap: balance;
+  }
+
+  p, li, blockquote {
+    text-wrap: pretty;
   }
 }

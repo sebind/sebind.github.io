@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Beaker, Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X, GraduationCap } from 'lucide-react';
 import { cn } from './lib/utils';
 
 export default function Navbar() {
@@ -11,6 +11,8 @@ export default function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'Publications', path: '/publications' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Digital Lab', path: '/digital-lab' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Education', path: '/education' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -28,7 +30,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -45,6 +47,9 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <button 
+            type="button"
+            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isOpen}
             className="md:hidden text-[#09323c]"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -56,7 +61,7 @@ export default function Navbar() {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden bg-[#fffdf9] border-b border-[#0f4c5c]/15 px-6 py-4">
-          <nav className="flex flex-col gap-4">
+          <nav aria-label="Mobile" className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}

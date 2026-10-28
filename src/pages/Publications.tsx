@@ -16,14 +16,14 @@ export default function Publications() {
           title: "Rational Design of Star-Shaped Donor−Acceptor Organic Small-Molecule/GCN Heterostructures for Superior Photocatalytic Hydrogen Evolution and Photoelectrocatalytic Water Splitting Applications",
           authors: ["Govindasamy Sathiyan", "Gayathri Kumaresan", "Geetha Venkatesan", "Sebin Devasia", "Pachagounder Sakthivel", "Nisha Banerjee", "Ranjith G. Nair", "Abinash Das"],
           journal: "ACS Applied Engineering Materials",
-          details: "(2026)",
+          details: "(2026) 4 (9): 5238–5246.",
           doi: "10.1021/acsaenm.6c00868"
         },
         {
           title: "Ultra-High Selectivity for Hydrogen Production from Formic Acid Over Pd–Ag Alloy Catalysts",
-          authors: ["Blessy S", "Anupreethi A", "S Devasia", "Pavul Raj R", "Selvakumar R", "Jun Z", "Johnravindar D"],
-          journal: "Reaction Chemistry & Engineering",
-          details: "(2026)",
+          authors: ["Blessy S", "Anupreethi A", "Sebin Devasia", "Pavul Raj R", "Selvakumar R", "Jun Z", "Johnravindar D"],
+          journal: "Reaction Chemistry & Engineering ",
+          details: "(2026) 11 (10): 2468–2481.",
           doi: "10.1039/d6re00134c"
         },      
       ]
@@ -263,8 +263,15 @@ export default function Publications() {
                 <div className="space-y-10">
                   {group.items.map((pub, pIdx) => (
                     <div key={pIdx} className="group">
-                      <h3 className="text-xl font-bold text-[#09323c] leading-snug group-hover:text-[#0f4c5c] transition-colors cursor-pointer mb-2">
-                        {pub.title}
+                      <h3 className="text-xl font-bold leading-snug mb-2">
+                        <a
+                          href={pub.doi ? getDoiLink(pub.doi) : getScholarLink(pub.title)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#09323c] hover:text-[#16697a] transition-colors"
+                        >
+                          {pub.title}
+                        </a>
                       </h3>
                       <p className="text-[#2c4c54] text-base mb-2 italic">
                         {pub.authors.map((a, i) => (

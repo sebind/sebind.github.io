@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, Globe, Download, Printer, ExternalLink, Award, BookOpen, Briefcase, GraduationCap, Code, Languages, Heart, Loader2 } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, Globe, Download, Printer, BookOpen, Briefcase, GraduationCap, Code, Languages, Heart, Loader2 } from 'lucide-react';
 import { motion } from 'motion/react';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 
 export default function CV() {
   const cvRef = useRef<HTMLDivElement>(null);
@@ -21,6 +19,10 @@ export default function CV() {
     
     setIsDownloading(true);
     try {
+      const [{ default: html2canvas }, { default: jsPDF }] = await Promise.all([
+        import('html2canvas'),
+        import('jspdf'),
+      ]);
       const element = cvRef.current;
       const canvas = await html2canvas(element, {
         scale: 2, // Higher quality
@@ -52,7 +54,7 @@ export default function CV() {
   };
 
   return (
-    <motion.div 
+    <motion.main 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       className="min-h-screen bg-[#faf7f0] py-12 px-4 sm:px-6 lg:px-8 print:bg-white print:py-0 print:px-0"
@@ -314,6 +316,6 @@ export default function CV() {
           Generated Academic CV • Dr. Sebin Devasia • {new Date().getFullYear()}
         </footer>
       </div>
-    </motion.div>
+    </motion.main>
   );
 }

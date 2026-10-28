@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { GraduationCap, Users, Sun, Layers as LayersIcon, Monitor, FlaskConical, LayoutGrid, ExternalLink } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -115,7 +114,7 @@ export default function Home() {
   ];
 
   return (
-    <motion.div 
+    <motion.main 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       className="flex-grow"
@@ -181,6 +180,7 @@ export default function Home() {
                 alt="Professional portrait of Dr. Sebin Devasia" 
                 className="h-[500px] w-full rounded-2xl object-cover shadow-2xl transition-all duration-700" 
                 src="/image/prof_pic2.png"
+                fetchPriority="high"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -212,6 +212,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </motion.div>
+    </motion.main>
   );
 }
