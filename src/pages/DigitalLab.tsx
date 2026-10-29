@@ -66,44 +66,45 @@ export default function DigitalLab() {
     <motion.main
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="relative flex flex-1 justify-center overflow-hidden py-12 px-6 md:px-16 lg:px-32"
+      className="relative flex flex-1 justify-center overflow-x-clip py-8 px-4 sm:py-12 sm:px-6 md:px-16 lg:px-32"
     >
-      {/* Ambient Apple-style Liquid Glass Background Orbs */}
+      {/* Ambient Soft Radial Background Glows (GPU-safe on mobile without filter:blur tile artifacts) */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-24 left-1/4 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-[#0f4c5c]/20 via-[#14b8a6]/15 to-transparent blur-3xl" />
-        <div className="absolute top-1/3 -right-20 h-[380px] w-[380px] rounded-full bg-gradient-to-tl from-[#f59e0b]/15 via-[#0f4c5c]/12 to-transparent blur-3xl" />
-        <div className="absolute -bottom-24 left-10 h-[340px] w-[340px] rounded-full bg-gradient-to-tr from-[#09323c]/15 via-[#2dd4bf]/10 to-transparent blur-3xl" />
+        <div className="absolute -top-24 left-1/4 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,rgba(15,76,92,0.12)_0%,rgba(20,184,166,0.06)_45%,transparent_70%)]" />
+        <div className="absolute top-1/3 -right-20 h-[380px] w-[380px] rounded-full bg-[radial-gradient(circle,rgba(245,158,11,0.08)_0%,rgba(15,76,92,0.05)_45%,transparent_70%)]" />
+        <div className="absolute -bottom-24 left-10 h-[340px] w-[340px] rounded-full bg-[radial-gradient(circle,rgba(9,50,60,0.08)_0%,rgba(45,212,191,0.04)_45%,transparent_70%)]" />
       </div>
 
-      <div className="layout-content-container flex w-full max-w-[1200px] flex-1 flex-col">
+      <div className="layout-content-container flex w-full max-w-[1200px] min-w-0 flex-1 flex-col">
         {/* Header Section */}
-        <div className="mb-10 flex flex-col gap-4">
-          <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/80 bg-white/60 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-[#0f4c5c] shadow-[0_2px_10px_rgba(15,76,92,0.06),inset_0_1px_0_rgba(255,255,255,0.9)] backdrop-blur-xl">
+        <div className="mb-8 sm:mb-10 flex flex-col gap-4">
+          <div className="inline-flex w-fit items-center gap-2 rounded-full border border-[#0f4c5c]/15 bg-[#fffdf9]/90 px-3.5 py-1.5 text-xs font-bold uppercase tracking-widest text-[#0f4c5c] shadow-2xs">
             <Sparkles className="h-3.5 w-3.5 text-[#0f4c5c]" />
             <span className="font-display">Vibecoded Scientific Apps</span>
           </div>
 
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
-              <h1 className="text-4xl font-black leading-tight tracking-tight text-[#09323c] md:text-5xl">
+              <h1 className="text-3xl sm:text-4xl font-black leading-tight tracking-tight text-[#09323c] md:text-5xl">
                 Digital <span className="text-[#0f4c5c]">Lab</span>
               </h1>
-              <p className="mt-2 max-w-2xl text-base leading-relaxed text-[#2c4c54]">
+              <p className="mt-2 max-w-2xl text-sm sm:text-base leading-relaxed text-[#2c4c54]">
                 Interactive web tools, scientific studios, and computational workflows crafted for rapid materials discovery and classroom exploration.
               </p>
             </div>
 
-            {/* Apple-Style Segmented Glass Filter Pill */}
-            <div className="flex flex-wrap items-center gap-1.5 self-start rounded-2xl border border-white/80 bg-white/50 p-1.5 shadow-[0_8px_24px_-6px_rgba(9,50,60,0.08),inset_0_1px_1px_rgba(255,255,255,0.9)] backdrop-blur-2xl md:self-auto">
+            {/* Segmented Filter Pill */}
+            <div className="flex flex-wrap items-center gap-1.5 self-start rounded-2xl border border-[#0f4c5c]/15 bg-[#fffdf9]/90 p-1.5 shadow-xs md:self-auto">
               {categories.map((cat) => (
                 <button
                   key={cat}
+                  type="button"
                   onClick={() => setActiveCategory(cat)}
                   className={cn(
-                    'rounded-xl px-4 py-2 text-xs font-semibold transition-all duration-200',
+                    'rounded-xl px-3.5 py-2 text-xs font-semibold transition-colors duration-200',
                     activeCategory === cat
-                      ? 'bg-[#0f4c5c] text-[#faf7f0] shadow-[0_4px_12px_rgba(15,76,92,0.25)]'
-                      : 'text-[#2c4c54] hover:bg-white/60 hover:text-[#09323c]'
+                      ? 'bg-[#0f4c5c] text-[#faf7f0] shadow-xs'
+                      : 'text-[#2c4c54] hover:bg-[#f0ebe0]/70 hover:text-[#09323c]'
                   )}
                 >
                   {cat}
@@ -113,35 +114,28 @@ export default function DigitalLab() {
           </div>
         </div>
 
-        {/* Apple-Themed Glassy Bento Grid */}
+        {/* Bento Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-12">
           {filteredApps.map((app) => (
-            <motion.div
+            <div
               key={app.id}
-              layout
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.35 }}
-              className="group relative col-span-1 flex flex-col justify-between overflow-hidden rounded-[28px] border border-white/80 bg-white/55 p-6 shadow-[0_24px_48px_-12px_rgba(9,50,60,0.12),inset_0_1px_1px_rgba(255,255,255,0.95)] ring-1 ring-[#0f4c5c]/10 backdrop-blur-2xl transition-all duration-500 hover:-translate-y-1 hover:bg-white/65 hover:shadow-[0_32px_64px_-12px_rgba(9,50,60,0.18),inset_0_1px_2px_rgba(255,255,255,1)] md:col-span-2 lg:col-span-8 lg:p-8"
+              className="group relative col-span-1 min-w-0 flex flex-col justify-between overflow-hidden rounded-3xl border border-[#0f4c5c]/15 bg-[#fffdf9] p-5 sm:p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0f4c5c]/30 hover:shadow-lg md:col-span-2 lg:col-span-8 lg:p-8"
             >
-              {/* Subtle specular glass reflection */}
-              <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-gradient-to-br from-white/70 via-[#14b8a6]/15 to-transparent blur-2xl transition-transform duration-700 group-hover:scale-110" />
-
-              <div>
+              <div className="min-w-0">
                 {/* Top Bar: App Icon + Title + Live Badge */}
                 <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    {/* Apple-style squircle app icon */}
-                    <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-[18px] bg-gradient-to-br from-[#09323c] via-[#0f4c5c] to-[#14b8a6] text-[#faf7f0] shadow-[0_10px_25px_-5px_rgba(15,76,92,0.45),inset_0_1px_1px_rgba(255,255,255,0.4)]">
-                      <Atom className="h-7 w-7 transition-transform duration-500 group-hover:rotate-45" />
+                    {/* Squircle app icon */}
+                    <div className="relative flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#09323c] via-[#0f4c5c] to-[#14b8a6] text-[#faf7f0] shadow-sm">
+                      <Atom className="h-6 w-6 sm:h-7 sm:w-7 transition-transform duration-500 group-hover:rotate-45" />
                     </div>
                     <div>
                       <div className="flex items-center gap-2.5">
-                        <h2 className="text-2xl font-black tracking-tight text-[#09323c]">
+                        <h2 className="text-xl sm:text-2xl font-black tracking-tight text-[#09323c]">
                           {app.name}
                         </h2>
                         {app.version && (
-                          <span className="rounded-full border border-[#0f4c5c]/15 bg-white/70 px-2 py-0.5 font-mono text-[10px] font-bold text-[#0f4c5c] backdrop-blur-md">
+                          <span className="rounded-full border border-[#0f4c5c]/15 bg-[#faf7f0] px-2 py-0.5 font-mono text-[10px] font-bold text-[#0f4c5c]">
                             {app.version}
                           </span>
                         )}
@@ -153,33 +147,33 @@ export default function DigitalLab() {
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/25 bg-emerald-500/10 px-3 py-1 text-[11px] font-bold text-emerald-800 backdrop-blur-md">
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/25 bg-emerald-500/10 px-3 py-1 text-[11px] font-bold text-emerald-800">
                       <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
                       {app.status}
                     </span>
                   </div>
                 </div>
 
-                {/* Interactive Glass Studio Preview Window */}
-                <div className="mb-6 overflow-hidden rounded-2xl border border-white/80 bg-gradient-to-br from-[#09323c]/95 via-[#0f4c5c]/90 to-[#134e5e]/95 p-4 text-[#faf7f0] shadow-[0_12px_30px_-8px_rgba(9,50,60,0.35),inset_0_1px_1px_rgba(255,255,255,0.25)]">
+                {/* Interactive Studio Preview Window */}
+                <div className="mb-6 overflow-hidden rounded-2xl border border-[#09323c]/20 bg-gradient-to-br from-[#09323c] via-[#0f4c5c] to-[#134e5e] p-3.5 sm:p-4 text-[#faf7f0] shadow-md">
                   {/* macOS Window Chrome */}
-                  <div className="mb-3 flex items-center justify-between border-b border-white/10 pb-2.5">
-                    <div className="flex items-center gap-1.5">
-                      <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]/90" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]/90" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]/90" />
-                      <span className="ml-2 font-mono text-[11px] text-white/70">
+                  <div className="mb-3 flex items-center justify-between gap-2 border-b border-white/15 pb-2.5">
+                    <div className="flex min-w-0 items-center gap-1.5">
+                      <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#ff5f56]" />
+                      <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#ffbd2e]" />
+                      <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#27c93f]" />
+                      <span className="ml-1.5 truncate font-mono text-[11px] text-white/75">
                         sebind.github.io/seal4qe — pw.x studio
                       </span>
                     </div>
-                    <span className="rounded-md bg-white/10 px-2 py-0.5 font-mono text-[10px] text-teal-200">
+                    <span className="shrink-0 rounded-md bg-white/10 px-2 py-0.5 font-mono text-[10px] text-teal-200">
                       SCF / Relax / Bands
                     </span>
                   </div>
 
                   {/* Studio Mockup Content */}
                   <div className="grid grid-cols-1 gap-3 sm:grid-cols-12">
-                    <div className="flex flex-col justify-between rounded-xl border border-white/10 bg-white/5 p-3 backdrop-blur-md sm:col-span-5">
+                    <div className="flex flex-col justify-between rounded-xl border border-white/10 bg-white/5 p-3 sm:col-span-5">
                       <div className="flex items-center justify-between text-[11px] text-teal-200/90">
                         <span className="flex items-center gap-1 font-semibold">
                           <Box className="h-3.5 w-3.5" /> Crystal Unit Cell
@@ -187,7 +181,7 @@ export default function DigitalLab() {
                         <span className="font-mono text-[10px] text-white/60">CIF / XYZ</span>
                       </div>
                       <div className="my-3 flex items-center justify-center gap-3 py-1">
-                        <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-teal-400/20 ring-1 ring-teal-300/40">
+                        <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-teal-400/20 ring-1 ring-teal-300/40">
                           <Atom className="h-6 w-6 text-teal-200" />
                         </div>
                         <div className="text-xs">
@@ -239,7 +233,7 @@ export default function DigitalLab() {
                   {app.highlights.map((feat, i) => (
                     <div
                       key={i}
-                      className="flex items-center gap-2.5 rounded-xl border border-white/80 bg-white/60 px-3.5 py-2.5 text-xs font-semibold text-[#09323c] shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] backdrop-blur-md"
+                      className="flex items-center gap-2.5 rounded-xl border border-[#0f4c5c]/15 bg-[#faf7f0] px-3.5 py-2.5 text-xs font-semibold text-[#09323c]"
                     >
                       <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-[#0f4c5c]/10 text-[#0f4c5c]">
                         {i === 0 ? (
@@ -268,7 +262,7 @@ export default function DigitalLab() {
                         'font-display rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider',
                         tIdx === 0
                           ? 'bg-[#0f4c5c]/12 text-[#0f4c5c]'
-                          : 'border border-white/80 bg-white/60 text-[#2c4c54]'
+                          : 'border border-[#0f4c5c]/15 bg-[#faf7f0] text-[#2c4c54]'
                       )}
                     >
                       {tag}
@@ -280,25 +274,25 @@ export default function DigitalLab() {
                   href={app.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-[#09323c] to-[#0f4c5c] px-5 py-2.5 text-xs font-bold text-[#faf7f0] shadow-[0_10px_20px_-5px_rgba(15,76,92,0.4),inset_0_1px_0_rgba(255,255,255,0.25)] transition-all hover:scale-[1.02] hover:shadow-[0_14px_24px_-5px_rgba(15,76,92,0.5)] active:scale-95"
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#09323c] to-[#0f4c5c] px-5 py-2.5 text-xs font-bold text-[#faf7f0] shadow-sm transition-all hover:opacity-95 active:scale-95"
                 >
                   Launch Seal Studio
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
               </div>
-            </motion.div>
+            </div>
           ))}
 
-          {/* Right-Side Glass Bento Cards (Apple Widget Style) */}
-          <div className="col-span-1 flex flex-col gap-6 md:col-span-2 lg:col-span-4">
-            {/* Quick Direct Launch Glass Widget */}
-            <div className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-[28px] border border-white/80 bg-white/50 p-6 shadow-[0_20px_40px_-15px_rgba(9,50,60,0.1),inset_0_1px_1px_rgba(255,255,255,0.95)] ring-1 ring-[#0f4c5c]/10 backdrop-blur-2xl">
+          {/* Right-Side Bento Cards */}
+          <div className="col-span-1 min-w-0 flex flex-col gap-6 md:col-span-2 lg:col-span-4">
+            {/* Quick Direct Launch Widget */}
+            <div className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-3xl border border-[#0f4c5c]/15 bg-[#fffdf9] p-5 sm:p-6 shadow-sm">
               <div>
                 <div className="mb-4 flex items-center justify-between">
                   <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#0f4c5c]/10 text-[#0f4c5c]">
                     <Terminal className="h-5 w-5" />
                   </span>
-                  <span className="font-display rounded-full border border-white/80 bg-white/70 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#4f6d75]">
+                  <span className="font-display rounded-full border border-[#0f4c5c]/15 bg-[#faf7f0] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#4f6d75]">
                     Zero-Install
                   </span>
                 </div>
@@ -310,7 +304,7 @@ export default function DigitalLab() {
                 </p>
               </div>
 
-              <div className="mt-6 rounded-2xl border border-white/80 bg-white/60 p-3.5 backdrop-blur-md">
+              <div className="mt-6 rounded-2xl border border-[#0f4c5c]/15 bg-[#faf7f0] p-3.5">
                 <div className="font-display text-[10px] font-bold uppercase tracking-wider text-[#4f6d75]">
                   Featured Endpoint
                 </div>
@@ -318,18 +312,18 @@ export default function DigitalLab() {
                   href="https://sebind.github.io/seal4qe/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 flex items-center justify-between font-mono text-xs font-bold text-[#0f4c5c] hover:underline"
+                  className="mt-1 flex items-center justify-between gap-2 font-mono text-xs font-bold text-[#0f4c5c] hover:underline"
                 >
-                  <span>sebind.github.io/seal4qe</span>
+                  <span className="truncate">sebind.github.io/seal4qe</span>
                   <ExternalLink className="h-3.5 w-3.5 shrink-0" />
                 </a>
               </div>
             </div>
 
-            {/* Upcoming Lab Slot Glass Widget */}
-            <div className="relative flex flex-col justify-between overflow-hidden rounded-[28px] border border-dashed border-[#0f4c5c]/25 bg-white/35 p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.8)] backdrop-blur-xl">
+            {/* Upcoming Lab Slot Widget */}
+            <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl border border-dashed border-[#0f4c5c]/25 bg-[#fffdf9]/70 p-5 sm:p-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#f0ebe0]/80 text-[#0f4c5c]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#f0ebe0] text-[#0f4c5c]">
                   <Cpu className="h-5 w-5" />
                 </span>
                 <div>
