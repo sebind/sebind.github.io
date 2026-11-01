@@ -21,8 +21,12 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-[#0f4c5c]/15 bg-[#faf7f0]/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12">
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#0f4c5c] text-[#faf7f0]">
-            <GraduationCap className="w-6 h-6" />
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#36454F] text-[#faf7f0]">
+            <img
+              src="/image/pageicon.png"
+              alt="portfolio-logo"
+              className="w-7 h-7 object-contain"
+            />
           </div>
           <span className="font-display text-xl font-bold tracking-tight text-[#09323c]">
             Sebin <span className="text-[#0f4c5c]">Devasia</span>
@@ -46,7 +50,7 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button 
+          <button
             type="button"
             aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={isOpen}

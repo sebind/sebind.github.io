@@ -1,4 +1,4 @@
-import { GraduationCap, Users, Sun, Layers as LayersIcon, Monitor, FlaskConical, LayoutGrid, ExternalLink } from 'lucide-react';
+import { GraduationCap, Users, Sun, Layers as LayersIcon, Monitor, FlaskConical, LayoutGrid, ExternalLink, BrainCircuit, Network } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     { icon: <LayersIcon className="w-8 h-8 text-[#0f4c5c]" />, title: "Semiconductor thin films", desc: "Investigating the growth and properties of thin-film layers for high-efficiency electronics." },
     { icon: <Monitor className="w-8 h-8 text-[#0f4c5c]" />, title: "Computational Materials", desc: "Utilizing DFT and advanced simulations to predict novel material properties." },
     { icon: <FlaskConical className="w-8 h-8 text-[#0f4c5c]" />, title: "Lead-free perovskites", desc: "Developing eco-friendly, non-toxic materials for stable and efficient solar cells." },
-    { icon: <LayoutGrid className="w-8 h-8 text-[#0f4c5c]" />, title: "2D materials", desc: "Exploring the unique quantum phenomena in atomically thin layer structures." },
+    { icon: <Network className="w-8 h-8 text-[#0f4c5c]" />, title: "Machine Learning for Materials", desc: "Data-driven approaches for materials prediction." },
   ];
 
   const academicProfiles = [
@@ -114,7 +114,7 @@ export default function Home() {
   ];
 
   return (
-    <motion.main 
+    <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       className="flex-grow"
@@ -130,10 +130,14 @@ export default function Home() {
               <span className="text-[#0f4c5c]">Dr. Sebin Devasia</span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-[#2c4c54]">
-              Exploring emerging optoelectronic and semiconductor materials through synthesis, characterization, and computational modeling to enable next-generation energy and sensing technologies.
+              My research focuses on lead-free perovskite-inspired materials,
+              thin film technologies, and materials discovery, integrating experimental
+              investigations, first-principles calculations, and machine learning to understand
+              structure-property relationships and develop materials for sustainable energy
+              conversion, photodetection, and sensing applications.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a 
+              <a
                 href="https://lasergroup.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -143,7 +147,7 @@ export default function Home() {
                 Research Group
                 <ExternalLink className="w-4 h-4 opacity-80" />
               </a>
-              <a 
+              <a
                 href="/image/SebinDevasia_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -176,9 +180,9 @@ export default function Home() {
           <div className="order-1 lg:order-2">
             <div className="relative mx-auto max-w-md lg:ml-auto">
               <div className="absolute -right-4 -top-4 -z-10 h-full w-full rounded-2xl bg-[#0f4c5c]/15"></div>
-              <img 
-                alt="Professional portrait of Dr. Sebin Devasia" 
-                className="h-[500px] w-full rounded-2xl object-cover shadow-2xl transition-all duration-700" 
+              <img
+                alt="Professional portrait of Dr. Sebin Devasia"
+                className="h-[500px] w-full rounded-2xl object-cover shadow-2xl transition-all duration-700"
                 src="/image/prof_pic2.png"
                 fetchPriority="high"
                 referrerPolicy="no-referrer"
@@ -195,8 +199,10 @@ export default function Home() {
             <h2 className="mb-6 text-4xl font-black tracking-tight text-[#09323c]">Research <span className="text-[#0f4c5c]">Interests</span></h2>
             <div className="h-1.5 w-24 rounded-full bg-[#0f4c5c]"></div>
             <div className="mt-12 space-y-6 text-lg leading-relaxed text-[#2c4c54]">
-              <p>Delving into the realm of materials science has always been my primary research interest. My work focuses on electronic and optoelectronic materials, aiming to unravel the complexities of light-matter interactions and charge transport phenomena in semiconductors.</p>
-              <p>Through my research, I aspire to make meaningful contributions to the scientific community and advance our understanding of the natural world. To deepen my understanding of these materials, I utilize cutting-edge computational calculations based on density functional theory (DFT) to shed light on the electronic and optical properties of these materials and contribute to the advancement of their utilization in practical applications.</p>
+              <p>My research interests lie at the intersection of materials science, semiconductor physics, and optoelectronic technologies, focusing on emerging functional materials for next-generation energy and sensing applications. I am particularly interested in lead-free perovskite-inspired materials, metal chalcogenides, and semiconductor thin films for photovoltaics and photodetectors. My work explores the relationships between material composition, crystal structure, electronic properties, charge transport, and light–matter interactions.</p>
+
+              <p>To investigate these materials, I integrate experimental approaches, including thin-film deposition and characterization, with computational techniques based on density functional theory (DFT). I am also interested in applying machine learning and data-driven methods to accelerate materials discovery and predict material properties. Through this integrated approach, I aim to advance sustainable and efficient materials for emerging energy and optoelectronic technologies.</p>
+
             </div>
           </div>
           <div className="lg:col-span-7">
